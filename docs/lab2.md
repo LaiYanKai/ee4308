@@ -275,7 +275,7 @@ The following variables / functions should be used. **Those listed as parameters
 | --- | --- | --- | --- |
 | `msg` | `sensor_msgs::msg::Range` | No | To read the sonar measurement from `msg.range`. |
 | `var_sonar_` | `double` | Yes | $\sigma_{snr,z}^2$. To read the variance of sonar measurements along the world's $z$-axis. |
-| `Ysonar_` | `Eigen::Vector3d` | No | $z_{snr}$. To store the sonar measurement. |
+| `Ysonar_` | `double` | No | $z_{snr}$. To store the sonar measurement. |
 | `Xz_` | `Eigen::Vector2d` | No | $\mathbf{\hat{X}}_z$. To store the drone's corrected $z$ osition and velocity in the world frame. |
 | `Pz_` | `Eigen::Matrix2d` | No | $\mathbf{P}_z$. To store the corrected covariance matrix for the states in $\mathbf{\hat{X}}_z$. |
 
